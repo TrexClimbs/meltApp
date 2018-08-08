@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		034A420D211B6B27006BDC4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A420C211B6B27006BDC4C /* AppDelegate.swift */; };
+		034A420F211B6B27006BDC4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A420E211B6B27006BDC4C /* ViewController.swift */; };
+		034A4212211B6B27006BDC4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 034A4210211B6B27006BDC4C /* Main.storyboard */; };
+		034A4215211B6B27006BDC4C /* meltApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 034A4213211B6B27006BDC4C /* meltApp.xcdatamodeld */; };
+		034A4217211B6B2B006BDC4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 034A4216211B6B2B006BDC4C /* Assets.xcassets */; };
+		034A421A211B6B2B006BDC4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 034A4218211B6B2B006BDC4C /* LaunchScreen.storyboard */; };
+		034A4225211B6B2B006BDC4C /* meltAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A4224211B6B2B006BDC4C /* meltAppTests.swift */; };
+		034A4230211B6B2B006BDC4C /* meltAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A422F211B6B2B006BDC4C /* meltAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		034A4221211B6B2B006BDC4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 034A4201211B6B27006BDC4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 034A4208211B6B27006BDC4C;
+			remoteInfo = meltApp;
+		};
+		034A422C211B6B2B006BDC4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 034A4201211B6B27006BDC4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 034A4208211B6B27006BDC4C;
+			remoteInfo = meltApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		034A4209211B6B27006BDC4C /* meltApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meltApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		034A420C211B6B27006BDC4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		034A420E211B6B27006BDC4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		034A4211211B6B27006BDC4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		034A4214211B6B27006BDC4C /* meltApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = meltApp.xcdatamodel; sourceTree = "<group>"; };
+		034A4216211B6B2B006BDC4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		034A4219211B6B2B006BDC4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		034A421B211B6B2B006BDC4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		034A4220211B6B2B006BDC4C /* meltAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = meltAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		034A4224211B6B2B006BDC4C /* meltAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meltAppTests.swift; sourceTree = "<group>"; };
+		034A4226211B6B2B006BDC4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		034A422B211B6B2B006BDC4C /* meltAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = meltAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		034A422F211B6B2B006BDC4C /* meltAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meltAppUITests.swift; sourceTree = "<group>"; };
+		034A4231211B6B2B006BDC4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		034A4206211B6B27006BDC4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		034A421D211B6B2B006BDC4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		034A4228211B6B2B006BDC4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034A4200211B6B27006BDC4C = {
+			isa = PBXGroup;
+			children = (
+				034A420B211B6B27006BDC4C /* meltApp */,
+				034A4223211B6B2B006BDC4C /* meltAppTests */,
+				034A422E211B6B2B006BDC4C /* meltAppUITests */,
+				034A420A211B6B27006BDC4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		034A420A211B6B27006BDC4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				034A4209211B6B27006BDC4C /* meltApp.app */,
+				034A4220211B6B2B006BDC4C /* meltAppTests.xctest */,
+				034A422B211B6B2B006BDC4C /* meltAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		034A420B211B6B27006BDC4C /* meltApp */ = {
+			isa = PBXGroup;
+			children = (
+				034A420C211B6B27006BDC4C /* AppDelegate.swift */,
+				034A420E211B6B27006BDC4C /* ViewController.swift */,
+				034A4210211B6B27006BDC4C /* Main.storyboard */,
+				034A4216211B6B2B006BDC4C /* Assets.xcassets */,
+				034A4218211B6B2B006BDC4C /* LaunchScreen.storyboard */,
+				034A421B211B6B2B006BDC4C /* Info.plist */,
+				034A4213211B6B27006BDC4C /* meltApp.xcdatamodeld */,
+			);
+			path = meltApp;
+			sourceTree = "<group>";
+		};
+		034A4223211B6B2B006BDC4C /* meltAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				034A4224211B6B2B006BDC4C /* meltAppTests.swift */,
+				034A4226211B6B2B006BDC4C /* Info.plist */,
+			);
+			path = meltAppTests;
+			sourceTree = "<group>";
+		};
+		034A422E211B6B2B006BDC4C /* meltAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				034A422F211B6B2B006BDC4C /* meltAppUITests.swift */,
+				034A4231211B6B2B006BDC4C /* Info.plist */,
+			);
+			path = meltAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		034A4208211B6B27006BDC4C /* meltApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 034A4234211B6B2B006BDC4C /* Build configuration list for PBXNativeTarget "meltApp" */;
+			buildPhases = (
+				034A4205211B6B27006BDC4C /* Sources */,
+				034A4206211B6B27006BDC4C /* Frameworks */,
+				034A4207211B6B27006BDC4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = meltApp;
+			productName = meltApp;
+			productReference = 034A4209211B6B27006BDC4C /* meltApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		034A421F211B6B2B006BDC4C /* meltAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 034A4237211B6B2B006BDC4C /* Build configuration list for PBXNativeTarget "meltAppTests" */;
+			buildPhases = (
+				034A421C211B6B2B006BDC4C /* Sources */,
+				034A421D211B6B2B006BDC4C /* Frameworks */,
+				034A421E211B6B2B006BDC4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				034A4222211B6B2B006BDC4C /* PBXTargetDependency */,
+			);
+			name = meltAppTests;
+			productName = meltAppTests;
+			productReference = 034A4220211B6B2B006BDC4C /* meltAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		034A422A211B6B2B006BDC4C /* meltAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 034A423A211B6B2B006BDC4C /* Build configuration list for PBXNativeTarget "meltAppUITests" */;
+			buildPhases = (
+				034A4227211B6B2B006BDC4C /* Sources */,
+				034A4228211B6B2B006BDC4C /* Frameworks */,
+				034A4229211B6B2B006BDC4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				034A422D211B6B2B006BDC4C /* PBXTargetDependency */,
+			);
+			name = meltAppUITests;
+			productName = meltAppUITests;
+			productReference = 034A422B211B6B2B006BDC4C /* meltAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		034A4201211B6B27006BDC4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Kode With Klossy";
+				TargetAttributes = {
+					034A4208211B6B27006BDC4C = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					034A421F211B6B2B006BDC4C = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 034A4208211B6B27006BDC4C;
+					};
+					034A422A211B6B2B006BDC4C = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 034A4208211B6B27006BDC4C;
+					};
+				};
+			};
+			buildConfigurationList = 034A4204211B6B27006BDC4C /* Build configuration list for PBXProject "meltApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 034A4200211B6B27006BDC4C;
+			productRefGroup = 034A420A211B6B27006BDC4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				034A4208211B6B27006BDC4C /* meltApp */,
+				034A421F211B6B2B006BDC4C /* meltAppTests */,
+				034A422A211B6B2B006BDC4C /* meltAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		034A4207211B6B27006BDC4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034A421A211B6B2B006BDC4C /* LaunchScreen.storyboard in Resources */,
+				034A4217211B6B2B006BDC4C /* Assets.xcassets in Resources */,
+				034A4212211B6B27006BDC4C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		034A421E211B6B2B006BDC4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		034A4229211B6B2B006BDC4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		034A4205211B6B27006BDC4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034A420F211B6B27006BDC4C /* ViewController.swift in Sources */,
+				034A4215211B6B27006BDC4C /* meltApp.xcdatamodeld in Sources */,
+				034A420D211B6B27006BDC4C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		034A421C211B6B2B006BDC4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034A4225211B6B2B006BDC4C /* meltAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		034A4227211B6B2B006BDC4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034A4230211B6B2B006BDC4C /* meltAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		034A4222211B6B2B006BDC4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 034A4208211B6B27006BDC4C /* meltApp */;
+			targetProxy = 034A4221211B6B2B006BDC4C /* PBXContainerItemProxy */;
+		};
+		034A422D211B6B2B006BDC4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 034A4208211B6B27006BDC4C /* meltApp */;
+			targetProxy = 034A422C211B6B2B006BDC4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		034A4210211B6B27006BDC4C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				034A4211211B6B27006BDC4C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		034A4218211B6B2B006BDC4C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				034A4219211B6B2B006BDC4C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		034A4232211B6B2B006BDC4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		034A4233211B6B2B006BDC4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		034A4235211B6B2B006BDC4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P4MS3W7L4H;
+				INFOPLIST_FILE = meltApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kodewithklossy.meltApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		034A4236211B6B2B006BDC4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P4MS3W7L4H;
+				INFOPLIST_FILE = meltApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kodewithklossy.meltApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		034A4238211B6B2B006BDC4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P4MS3W7L4H;
+				INFOPLIST_FILE = meltAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kodewithklossy.meltAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/meltApp.app/meltApp";
+			};
+			name = Debug;
+		};
+		034A4239211B6B2B006BDC4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P4MS3W7L4H;
+				INFOPLIST_FILE = meltAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kodewithklossy.meltAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/meltApp.app/meltApp";
+			};
+			name = Release;
+		};
+		034A423B211B6B2B006BDC4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P4MS3W7L4H;
+				INFOPLIST_FILE = meltAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kodewithklossy.meltAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = meltApp;
+			};
+			name = Debug;
+		};
+		034A423C211B6B2B006BDC4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P4MS3W7L4H;
+				INFOPLIST_FILE = meltAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kodewithklossy.meltAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = meltApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		034A4204211B6B27006BDC4C /* Build configuration list for PBXProject "meltApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034A4232211B6B2B006BDC4C /* Debug */,
+				034A4233211B6B2B006BDC4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		034A4234211B6B2B006BDC4C /* Build configuration list for PBXNativeTarget "meltApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034A4235211B6B2B006BDC4C /* Debug */,
+				034A4236211B6B2B006BDC4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		034A4237211B6B2B006BDC4C /* Build configuration list for PBXNativeTarget "meltAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034A4238211B6B2B006BDC4C /* Debug */,
+				034A4239211B6B2B006BDC4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		034A423A211B6B2B006BDC4C /* Build configuration list for PBXNativeTarget "meltAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034A423B211B6B2B006BDC4C /* Debug */,
+				034A423C211B6B2B006BDC4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		034A4213211B6B27006BDC4C /* meltApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				034A4214211B6B27006BDC4C /* meltApp.xcdatamodel */,
+			);
+			currentVersion = 034A4214211B6B27006BDC4C /* meltApp.xcdatamodel */;
+			path = meltApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 034A4201211B6B27006BDC4C /* Project object */;
+}
