@@ -88,15 +88,10 @@ class EditProjectTableViewController: UITableViewController, UIImagePickerContro
         
         let cellPhoto = photo[indexPath.row]
         
-        print("first")
-        
         if let cellPhotoImageData = cellPhoto.imageData {
-            
-            print("first ifff")
             
             if let cellPhotoImage = UIImage(data: cellPhotoImageData) {
                 cell.imageView?.image = cellPhotoImage
-                print("second ifff")
             }
         }
         return cell
@@ -112,8 +107,24 @@ class EditProjectTableViewController: UITableViewController, UIImagePickerContro
         return photo.count
     }
 
-    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        performSegue(withIdentifier: "moveToDetail", sender: photo[indexPath.row])
+        
+    }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "moveToDetail" {
+            
+            if let photoDetailView = segue.destination as? EnlargedImage {
+                
+                if let photoToSend = sender as? Photo {
+                    photoDetailView.photo = photoToSend
+                }
+            }
+            
+        }
+    }
     
 
     /*
@@ -124,17 +135,21 @@ class EditProjectTableViewController: UITableViewController, UIImagePickerContro
     }
     */
 
-    /*
-    // Override to support editing the table view.
+    
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+            
+            if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+                
+                let photoToDelete = photo[indexPath.row]
+                
+                context.delete(photoToDelete)
+            }
+        }
+        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+        getPhotos()
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.

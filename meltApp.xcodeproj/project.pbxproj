@@ -17,6 +17,7 @@
 		034A423E211B6F11006BDC4C /* EditProjectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A423D211B6F11006BDC4C /* EditProjectTableViewController.swift */; };
 		034A4240211B6F46006BDC4C /* PlayProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A423F211B6F46006BDC4C /* PlayProjectViewController.swift */; };
 		034A4244211B6FBC006BDC4C /* EnlargedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A4243211B6FBC006BDC4C /* EnlargedImage.swift */; };
+		034A4246211B92C1006BDC4C /* ImageUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A4245211B92C1006BDC4C /* ImageUtilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		034A423D211B6F11006BDC4C /* EditProjectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectTableViewController.swift; sourceTree = "<group>"; };
 		034A423F211B6F46006BDC4C /* PlayProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayProjectViewController.swift; sourceTree = "<group>"; };
 		034A4243211B6FBC006BDC4C /* EnlargedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnlargedImage.swift; sourceTree = "<group>"; };
+		034A4245211B92C1006BDC4C /* ImageUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				034A4243211B6FBC006BDC4C /* EnlargedImage.swift */,
 				034A420C211B6B27006BDC4C /* AppDelegate.swift */,
 				034A4210211B6B27006BDC4C /* Main.storyboard */,
+				034A4245211B92C1006BDC4C /* ImageUtilities.swift */,
 				034A423F211B6F46006BDC4C /* PlayProjectViewController.swift */,
 				034A423D211B6F11006BDC4C /* EditProjectTableViewController.swift */,
 				034A4216211B6B2B006BDC4C /* Assets.xcassets */,
@@ -269,6 +272,7 @@
 				034A423E211B6F11006BDC4C /* EditProjectTableViewController.swift in Sources */,
 				034A4244211B6FBC006BDC4C /* EnlargedImage.swift in Sources */,
 				034A4240211B6F46006BDC4C /* PlayProjectViewController.swift in Sources */,
+				034A4246211B92C1006BDC4C /* ImageUtilities.swift in Sources */,
 				034A420D211B6B27006BDC4C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,7 +447,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P4MS3W7L4H;
+				DEVELOPMENT_TEAM = AJCHA6JBL4;
 				INFOPLIST_FILE = meltApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -461,7 +465,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P4MS3W7L4H;
+				DEVELOPMENT_TEAM = AJCHA6JBL4;
 				INFOPLIST_FILE = meltApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
