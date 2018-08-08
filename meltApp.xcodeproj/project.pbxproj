@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		034A420D211B6B27006BDC4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A420C211B6B27006BDC4C /* AppDelegate.swift */; };
-		034A420F211B6B27006BDC4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A420E211B6B27006BDC4C /* ViewController.swift */; };
 		034A4212211B6B27006BDC4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 034A4210211B6B27006BDC4C /* Main.storyboard */; };
 		034A4215211B6B27006BDC4C /* meltApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 034A4213211B6B27006BDC4C /* meltApp.xcdatamodeld */; };
 		034A4217211B6B2B006BDC4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 034A4216211B6B2B006BDC4C /* Assets.xcassets */; };
 		034A421A211B6B2B006BDC4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 034A4218211B6B2B006BDC4C /* LaunchScreen.storyboard */; };
 		034A4225211B6B2B006BDC4C /* meltAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A4224211B6B2B006BDC4C /* meltAppTests.swift */; };
 		034A4230211B6B2B006BDC4C /* meltAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A422F211B6B2B006BDC4C /* meltAppUITests.swift */; };
+		034A423E211B6F11006BDC4C /* EditProjectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A423D211B6F11006BDC4C /* EditProjectTableViewController.swift */; };
+		034A4240211B6F46006BDC4C /* PlayProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A423F211B6F46006BDC4C /* PlayProjectViewController.swift */; };
+		034A4244211B6FBC006BDC4C /* EnlargedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A4243211B6FBC006BDC4C /* EnlargedImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,6 @@
 /* Begin PBXFileReference section */
 		034A4209211B6B27006BDC4C /* meltApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meltApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		034A420C211B6B27006BDC4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		034A420E211B6B27006BDC4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		034A4211211B6B27006BDC4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		034A4214211B6B27006BDC4C /* meltApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = meltApp.xcdatamodel; sourceTree = "<group>"; };
 		034A4216211B6B2B006BDC4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		034A422B211B6B2B006BDC4C /* meltAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = meltAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		034A422F211B6B2B006BDC4C /* meltAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meltAppUITests.swift; sourceTree = "<group>"; };
 		034A4231211B6B2B006BDC4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		034A423D211B6F11006BDC4C /* EditProjectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectTableViewController.swift; sourceTree = "<group>"; };
+		034A423F211B6F46006BDC4C /* PlayProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayProjectViewController.swift; sourceTree = "<group>"; };
+		034A4243211B6FBC006BDC4C /* EnlargedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnlargedImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,11 @@
 		034A420B211B6B27006BDC4C /* meltApp */ = {
 			isa = PBXGroup;
 			children = (
+				034A4243211B6FBC006BDC4C /* EnlargedImage.swift */,
 				034A420C211B6B27006BDC4C /* AppDelegate.swift */,
-				034A420E211B6B27006BDC4C /* ViewController.swift */,
 				034A4210211B6B27006BDC4C /* Main.storyboard */,
+				034A423F211B6F46006BDC4C /* PlayProjectViewController.swift */,
+				034A423D211B6F11006BDC4C /* EditProjectTableViewController.swift */,
 				034A4216211B6B2B006BDC4C /* Assets.xcassets */,
 				034A4218211B6B2B006BDC4C /* LaunchScreen.storyboard */,
 				034A421B211B6B2B006BDC4C /* Info.plist */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				034A420F211B6B27006BDC4C /* ViewController.swift in Sources */,
 				034A4215211B6B27006BDC4C /* meltApp.xcdatamodeld in Sources */,
+				034A423E211B6F11006BDC4C /* EditProjectTableViewController.swift in Sources */,
+				034A4244211B6FBC006BDC4C /* EnlargedImage.swift in Sources */,
+				034A4240211B6F46006BDC4C /* PlayProjectViewController.swift in Sources */,
 				034A420D211B6B27006BDC4C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
