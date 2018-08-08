@@ -8,28 +8,59 @@
 
 import UIKit
 
-class EditProjectTableViewController: UITableViewController {
+class EditProjectTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    @IBAction func accessProjectCamera(_ sender: Any) {
-        
-    }
-    
-    @IBAction func accessProjectLibrary(_ sender: Any) {
-        
-    }
+    var imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
             print("hellooooo melt")
         }
+        
+        imagePicker.delegate = self
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    
+    @IBAction func accessProjectCamera(_ sender: Any) {
+        imagePicker.sourceType = .camera
+        
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
+    @IBAction func accessProjectLibrary(_ sender: Any) {
+        imagePicker.sourceType = .photoLibrary
+        
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            
+            let photoToSave = Photo(entity: Photo.entity(), insertInto: context)
+            
+            if let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+                
+                if let userImage = selectedImage as? UIImage {
+                    
+                    if let userImageData = UIImagePNGRepresentation(userImage) {
+                        photoToSave.imageData = userImageData
+                    }
+                }
+                
+                (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+                
+            }
+        }
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0
