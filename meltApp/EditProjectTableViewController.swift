@@ -9,7 +9,9 @@
 import UIKit
 
 class EditProjectTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
+    
+    var photo : [Photo] = []
+    
     var imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
@@ -50,6 +52,7 @@ class EditProjectTableViewController: UITableViewController, UIImagePickerContro
                     
                     if let userImageData = UIImagePNGRepresentation(userImage) {
                         photoToSave.imageData = userImageData
+                        
                     }
                 }
                 
@@ -61,25 +64,57 @@ class EditProjectTableViewController: UITableViewController, UIImagePickerContro
         dismiss(animated: true, completion: nil)
     }
     
+    func getPhotos() {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            
+            if let coreDataPhotos = try? context.fetch(Photo.fetchRequest()) as? [Photo] {
+                
+                if let unwrappedPhotos = coreDataPhotos {
+                    photo = unwrappedPhotos
+                    tableView.reloadData()
+                    
+                }
+            }
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        getPhotos()
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = UITableViewCell()
+        
+        let cellPhoto = photo[indexPath.row]
+        
+        print("first")
+        
+        if let cellPhotoImageData = cellPhoto.imageData {
+            
+            print("first ifff")
+            
+            if let cellPhotoImage = UIImage(data: cellPhotoImageData) {
+                cell.imageView?.image = cellPhotoImage
+                print("second ifff")
+            }
+        }
+        return cell
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return photo.count
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+    
 
-        // Configure the cell...
-
-        return cell
-    }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

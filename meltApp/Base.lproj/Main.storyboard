@@ -54,7 +54,7 @@
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
         </scene>
-        <!--Edit Project Table View Controller-->
+        <!--Project 1-->
         <scene sceneID="N8D-Qt-Dl3">
             <objects>
                 <tableViewController id="d4f-2W-Ik4" customClass="EditProjectTableViewController" customModule="meltApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -62,37 +62,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <navigationBar key="tableFooterView" contentMode="scaleToFill" id="I1H-ND-YdM">
-                            <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <items>
-                                <navigationItem title="Project 1" id="tZB-Rb-qmk">
-                                    <barButtonItem key="leftBarButtonItem" systemItem="play" id="bh0-Mk-pqd">
-                                        <connections>
-                                            <segue destination="7gd-Dg-QO1" kind="show" id="AWH-Kz-gcm"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <rightBarButtonItems>
-                                        <barButtonItem systemItem="organize" id="kMc-Gd-jBI">
-                                            <connections>
-                                                <action selector="accessProjectLibrary:" destination="d4f-2W-Ik4" id="sar-Ud-Xpj"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem systemItem="camera" id="z1D-QL-ZUR">
-                                            <connections>
-                                                <action selector="accessProjectCamera:" destination="d4f-2W-Ik4" id="R0M-lB-EZG"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </rightBarButtonItems>
-                                </navigationItem>
-                            </items>
-                        </navigationBar>
                         <connections>
                             <outlet property="dataSource" destination="d4f-2W-Ik4" id="Rye-Ca-VGf"/>
                             <outlet property="delegate" destination="d4f-2W-Ik4" id="91I-GL-7Dx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="xRV-h9-scP"/>
+                    <navigationItem key="navigationItem" title="Project 1" id="xRV-h9-scP">
+                        <barButtonItem key="leftBarButtonItem" systemItem="play" id="bh0-Mk-pqd">
+                            <connections>
+                                <segue destination="7gd-Dg-QO1" kind="show" id="AWH-Kz-gcm"/>
+                            </connections>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="organize" id="kMc-Gd-jBI">
+                                <connections>
+                                    <action selector="accessProjectLibrary:" destination="d4f-2W-Ik4" id="sar-Ud-Xpj"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="camera" id="z1D-QL-ZUR">
+                                <connections>
+                                    <action selector="accessProjectCamera:" destination="d4f-2W-Ik4" id="R0M-lB-EZG"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bat-wx-V0Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
