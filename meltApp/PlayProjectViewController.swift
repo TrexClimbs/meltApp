@@ -9,38 +9,58 @@
 import UIKit
 
 class PlayProjectViewController: UIViewController {
-
-    var photo : Photo?
     
     @IBOutlet weak var playProjectImage: UIImageView!
+    
+    var photoIndex = 0
+    
+    var gameTimer: Timer!
+    
+    var photoArray : [Photo] = []
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
 
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
-            
+
             if let coreDataPhotos = try? context.fetch(Photo.fetchRequest()) as? [Photo] {
-                
-                
+
                 if let unwrappedPhotos = coreDataPhotos {
                     
-                    if let cellPhotoImageData = unwrappedPhotos[0].imageData {
-                        
-                        if let cellPhotoImage = UIImage(data: cellPhotoImageData) {
-                            
-                            playProjectImage.image = cellPhotoImage
-                        }
-                    }
+//                    let cellPhotoImageData = unwrappedPhotos[photoIndex].imageData
+                    
+                    print(unwrappedPhotos)
+                    
+//                    let cellPhotoImage = UIImage(data: cellPhotoImageData!)
+                    
+//                    photoArray.append(UIImage(data: cellPhotoImageData!)!)
+                    
+                    photoArray = unwrappedPhotos
+                    
+                    gameTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(displayNextPhoto), userInfo: nil, repeats: true)
 
                 }
-                
             }
         }
+    }
+    
+    @objc func displayNextPhoto() {
         
-//        for cell in EditProjectTableViewController {
+        if photoIndex < photoArray.count {
+            
+            let cellPhotoImageData = photoArray[photoIndex].imageData
+            
+            let cellPhotoImage = UIImage(data: cellPhotoImageData!)
+            
+            playProjectImage.image = cellPhotoImage
         
-//        }
+        }
+        photoIndex += 1
+        
+        if photoIndex == photoArray.count {
+            photoIndex = 0
+        }
     }
 
 }
