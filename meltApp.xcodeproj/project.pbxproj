@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		03063074211CD48400487227 /* Projects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03063073211CD48400487227 /* Projects.swift */; };
+		03063076211CE66900487227 /* NewProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03063075211CE66900487227 /* NewProject.swift */; };
 		034A420D211B6B27006BDC4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A420C211B6B27006BDC4C /* AppDelegate.swift */; };
 		034A4212211B6B27006BDC4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 034A4210211B6B27006BDC4C /* Main.storyboard */; };
 		034A4215211B6B27006BDC4C /* meltApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 034A4213211B6B27006BDC4C /* meltApp.xcdatamodeld */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		03063073211CD48400487227 /* Projects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projects.swift; sourceTree = "<group>"; };
+		03063075211CE66900487227 /* NewProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProject.swift; sourceTree = "<group>"; };
 		034A4209211B6B27006BDC4C /* meltApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meltApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		034A420C211B6B27006BDC4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		034A4211211B6B27006BDC4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				034A4210211B6B27006BDC4C /* Main.storyboard */,
 				03063073211CD48400487227 /* Projects.swift */,
 				034A4245211B92C1006BDC4C /* ImageUtilities.swift */,
+				03063075211CE66900487227 /* NewProject.swift */,
 				034A423F211B6F46006BDC4C /* PlayProjectViewController.swift */,
 				034A423D211B6F11006BDC4C /* EditProjectTableViewController.swift */,
 				034A4216211B6B2B006BDC4C /* Assets.xcassets */,
@@ -275,6 +278,7 @@
 				034A4215211B6B27006BDC4C /* meltApp.xcdatamodeld in Sources */,
 				034A423E211B6F11006BDC4C /* EditProjectTableViewController.swift in Sources */,
 				034A4244211B6FBC006BDC4C /* EnlargedImage.swift in Sources */,
+				03063076211CE66900487227 /* NewProject.swift in Sources */,
 				034A4240211B6F46006BDC4C /* PlayProjectViewController.swift in Sources */,
 				034A4246211B92C1006BDC4C /* ImageUtilities.swift in Sources */,
 				034A420D211B6B27006BDC4C /* AppDelegate.swift in Sources */,

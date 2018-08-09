@@ -16,6 +16,16 @@ class Projects: UITableViewController {
         super.viewDidLoad()
 
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let backgroundImage = UIImage(named: "pinkwater")
+        let imageView = UIImageView(image: backgroundImage)
+        self.tableView.backgroundView = imageView
+        
+        imageView.contentMode = .scaleAspectFill
+    }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         
