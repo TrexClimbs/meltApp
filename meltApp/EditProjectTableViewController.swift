@@ -48,7 +48,9 @@ class EditProjectTableViewController: UITableViewController, UIImagePickerContro
             
             if let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
                 
-                if let userImage = selectedImage as? UIImage {
+                let fixedImage = ImageUtilities.fixImageOrientation(imageSource: selectedImage)
+                
+                if let userImage = fixedImage {
                     
                     if let userImageData = UIImagePNGRepresentation(userImage) {
                         photoToSave.imageData = userImageData
