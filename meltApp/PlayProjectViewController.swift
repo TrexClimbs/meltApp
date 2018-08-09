@@ -10,26 +10,37 @@ import UIKit
 
 class PlayProjectViewController: UIViewController {
 
+    var photo : Photo?
+    
+    @IBOutlet weak var playProjectImage: UIImageView!
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            
+            if let coreDataPhotos = try? context.fetch(Photo.fetchRequest()) as? [Photo] {
+                
+                
+                if let unwrappedPhotos = coreDataPhotos {
+                    
+                    if let cellPhotoImageData = unwrappedPhotos[0].imageData {
+                        
+                        if let cellPhotoImage = UIImage(data: cellPhotoImageData) {
+                            
+                            playProjectImage.image = cellPhotoImage
+                        }
+                    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+                }
+                
+            }
+        }
+        
+//        for cell in EditProjectTableViewController {
+        
+//        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

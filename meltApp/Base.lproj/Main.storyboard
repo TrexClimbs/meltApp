@@ -134,6 +134,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Yn9-PB-nvH"/>
                     </view>
+                    <connections>
+                        <outlet property="playProjectImage" destination="4Ha-jL-va7" id="MGn-tS-S8Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MbU-DV-6Ib" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
