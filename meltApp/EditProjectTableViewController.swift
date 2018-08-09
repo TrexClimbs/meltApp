@@ -14,9 +14,12 @@ class EditProjectTableViewController: UITableViewController, UIImagePickerContro
     
     var imagePicker = UIImagePickerController()
     
+    @IBOutlet weak var navigationBar: UINavigationItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationBar.title = "Project 1"
         DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
             print("hellooooo melt")
         }
@@ -81,6 +84,18 @@ class EditProjectTableViewController: UITableViewController, UIImagePickerContro
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        
+        // Add a background view to the table view
+        let backgroundImage = UIImage(named: "pinkwater")
+        let imageView = UIImageView(image: backgroundImage)
+        self.tableView.backgroundView = imageView
+        
+        imageView.contentMode = .scaleAspectFill
+        
+        
+        
         getPhotos()
     }
     
@@ -93,9 +108,11 @@ class EditProjectTableViewController: UITableViewController, UIImagePickerContro
         if let cellPhotoImageData = cellPhoto.imageData {
             
             if let cellPhotoImage = UIImage(data: cellPhotoImageData) {
-                cell.imageView?.image = cellPhotoImage
+                let cellImage = cell.imageView
+                cellImage?.image = cellPhotoImage
             }
         }
+        cell.backgroundColor = .clear
         return cell
     }
     

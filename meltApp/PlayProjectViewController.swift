@@ -38,7 +38,7 @@ class PlayProjectViewController: UIViewController {
                     
                     photoArray = unwrappedPhotos
                     
-                    gameTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(displayNextPhoto), userInfo: nil, repeats: true)
+                    gameTimer = Timer.scheduledTimer(timeInterval: 0.25, target: self, selector: #selector(displayNextPhoto), userInfo: nil, repeats: true)
 
                 }
             }
