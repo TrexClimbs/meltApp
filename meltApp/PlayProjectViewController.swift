@@ -17,11 +17,34 @@ class PlayProjectViewController: UIViewController {
     
     var gameTimer: Timer!
     
+    var timeToUse = 0.25
+    
     var photoArray : [Photo] = []
+    
+    func getPhotos() {
+    
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+    
+            if let coreDataPhotos = try? context.fetch(Photo.fetchRequest()) as? [Photo] {
+    
+                if let unwrappedPhotos = coreDataPhotos {
+                    photoArray = unwrappedPhotos
+    }
+    
+    }
+    }
+    
+    }
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        getPhotos()
+        
+        let selectedTime = photoArray[photoArray.count - 1]
+        
+        timeToUse = selectedTime.timeData
         
         navBarTitle.title = "Welcome!"
 
@@ -41,7 +64,7 @@ class PlayProjectViewController: UIViewController {
                     
                     photoArray = unwrappedPhotos
                     
-                    gameTimer = Timer.scheduledTimer(timeInterval: 0.25, target: self, selector: #selector(displayNextPhoto), userInfo: nil, repeats: true)
+                    gameTimer = Timer.scheduledTimer(timeInterval: timeToUse, target: self, selector: #selector(displayNextPhoto), userInfo: nil, repeats: true)
 
                 }
             }

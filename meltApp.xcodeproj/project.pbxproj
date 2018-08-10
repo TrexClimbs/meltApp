@@ -20,6 +20,7 @@
 		034A4240211B6F46006BDC4C /* PlayProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A423F211B6F46006BDC4C /* PlayProjectViewController.swift */; };
 		034A4244211B6FBC006BDC4C /* EnlargedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A4243211B6FBC006BDC4C /* EnlargedImage.swift */; };
 		034A4246211B92C1006BDC4C /* ImageUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A4245211B92C1006BDC4C /* ImageUtilities.swift */; };
+		036F32B8211DF114006B9BC7 /* selectTimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036F32B7211DF114006B9BC7 /* selectTimeInterval.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		034A423F211B6F46006BDC4C /* PlayProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayProjectViewController.swift; sourceTree = "<group>"; };
 		034A4243211B6FBC006BDC4C /* EnlargedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnlargedImage.swift; sourceTree = "<group>"; };
 		034A4245211B92C1006BDC4C /* ImageUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtilities.swift; sourceTree = "<group>"; };
+		036F32B7211DF114006B9BC7 /* selectTimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectTimeInterval.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				034A4243211B6FBC006BDC4C /* EnlargedImage.swift */,
 				034A420C211B6B27006BDC4C /* AppDelegate.swift */,
 				034A4210211B6B27006BDC4C /* Main.storyboard */,
+				036F32B7211DF114006B9BC7 /* selectTimeInterval.swift */,
 				03063073211CD48400487227 /* Projects.swift */,
 				034A4245211B92C1006BDC4C /* ImageUtilities.swift */,
 				03063075211CE66900487227 /* NewProject.swift */,
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				036F32B8211DF114006B9BC7 /* selectTimeInterval.swift in Sources */,
 				03063074211CD48400487227 /* Projects.swift in Sources */,
 				034A4215211B6B27006BDC4C /* meltApp.xcdatamodeld in Sources */,
 				034A423E211B6F11006BDC4C /* EditProjectTableViewController.swift in Sources */,
