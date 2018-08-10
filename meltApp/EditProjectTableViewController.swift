@@ -19,7 +19,7 @@ class EditProjectTableViewController: UITableViewController, UIImagePickerContro
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationBar.title = "Project 1"
+        navigationBar.title = "Welcome!"
         DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
             print("hellooooo melt")
         }

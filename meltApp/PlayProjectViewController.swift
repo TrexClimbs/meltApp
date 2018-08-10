@@ -12,6 +12,7 @@ class PlayProjectViewController: UIViewController {
     
     @IBOutlet weak var playProjectImage: UIImageView!
     
+    @IBOutlet weak var navBarTitle: UINavigationItem!
     var photoIndex = 0
     
     var gameTimer: Timer!
@@ -21,6 +22,8 @@ class PlayProjectViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        navBarTitle.title = "Welcome!"
 
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
 
@@ -45,6 +48,10 @@ class PlayProjectViewController: UIViewController {
         }
     }
     
+    @IBAction func stopAnimation(_ sender: Any) {
+        gameTimer.invalidate()
+    }
+    
     @objc func displayNextPhoto() {
         
         if photoIndex < photoArray.count {
@@ -63,4 +70,6 @@ class PlayProjectViewController: UIViewController {
         }
     }
 
+    
+    
 }
